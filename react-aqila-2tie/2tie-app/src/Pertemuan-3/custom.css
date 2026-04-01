@@ -1,0 +1,62 @@
+/* Styling untuk keseluruhan halaman - Nuansa Hutan & Tanah */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f5e9; /* Hijau pucat sangat ringan */
+    background-image: radial-gradient(#c8e6c9 1px, transparent 1px);
+    background-size: 20px 20px; /* Pola titik halus agar tidak flat */
+    color: #2e7d32; /* Hijau botol tua */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container utama - Konsep Eco-Friendly */
+.card {
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px; /* Sudut membulat yang organik */
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.1); /* Shadow hijau lembut */
+    border-left: 8px solid #4caf50; /* Aksen batang pohon/daun */
+}
+
+/* Header utama - Sejuk di mata */
+h1 {
+    color: #1b5e20;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Paragraf - Nyaman dibaca */
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Garis pemisah - Seperti ranting atau akar */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #4caf50, #81c784, transparent);
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+/* Greeting - Earthy tones */
+small {
+    display: block;
+    font-style: italic;
+    text-align: left;
+    color: #795548; /* Warna cokelat kayu */
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Bonus: Efek Hover Lembut */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(46, 125, 50, 0.15);
+    transition: all 0.4s ease;
+}
