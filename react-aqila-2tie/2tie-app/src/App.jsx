@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import VisitorLayout from './layouts/VisitorLayout';
 import VisitorPage from './Pages/Visitor/VisitorLandingPage';
 import Products from "./pages/Products";
+import ProductDetail from "./Pages/productsDetail";
 
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="orders" element={<Orders />} />
           <Route path="customers" element={<Customers />} />
           <Route path="products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} /> 
         </Route>
 
         {/* 3. ROUTE AUTH (LOGIN/REGISTER) - TETAP AMAN */}
