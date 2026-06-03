@@ -1,9 +1,9 @@
+import { MdFastfood } from "react-icons/md"; 
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { MdSpaceDashboard } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 export default function Sidebar() {
-    
   const menuClass = ({ isActive }) =>
     `flex cursor-pointer items-center rounded-xl p-4  space-x-2
         ${
@@ -37,32 +37,27 @@ export default function Sidebar() {
       <div id="sidebar-menu" className="mt-10">
         <ul id="menu-list" className="space-y-3">
           <li>
-            <NavLink
-              id="menu-1"
-              to="/"
-              className={menuClass}
-            >
+            <NavLink id="menu-1" to="/" className={menuClass}>
               <MdSpaceDashboard className="mr-4 text-xl" />
               Dashboard
             </NavLink>
           </li>
           <li>
-            <NavLink
-              id="menu-2"
-              to="/Orders"
-              className={menuClass}
-            >
+            <NavLink id="menu-2" to="/Orders" className={menuClass}>
               <AiOutlineUnorderedList className="mr-4 text-xl" />
               Orders
             </NavLink>
           </li>
           <li>
-            <NavLink
-              id="menu-3"
-              to="/Customers"
-              className={menuClass}>
+            <NavLink id="menu-3" to="/Customers" className={menuClass}>
               <AiOutlineUser className="mr-4 text-xl" />
               Customers
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-4" to="/products" className={menuClass}>
+              <MdFastfood className="mr-4 text-xl" />
+              Products
             </NavLink>
           </li>
         </ul>

@@ -1,5 +1,5 @@
-﻿import { products } from "../../Data/Products";
-import { testimonials } from "../../Data/testimonials";
+﻿import { products } from "../../Data1/Products.js";
+import { testimonials } from "../../Data1/testimonials.js";
 
 import {
   FaInstagram,

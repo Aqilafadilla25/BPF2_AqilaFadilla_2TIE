@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import VisitorLayout from './layouts/VisitorLayout';
 import VisitorPage from './Pages/Visitor/VisitorLandingPage';
+import Products from "./pages/Products";
 
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="orders" element={<Orders />} />
           <Route path="customers" element={<Customers />} />
+          <Route path="products" element={<Products />} />
         </Route>
 
         {/* 3. ROUTE AUTH (LOGIN/REGISTER) - TETAP AMAN */}
