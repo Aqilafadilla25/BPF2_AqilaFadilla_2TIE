@@ -18,6 +18,7 @@ const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 import MainLayout from "../src/layouts/MainLayout";
 import AuthLayout from "../src/layouts/AuthLayout";
 import Loading from "../src/components/Loading";
+import Notes from "./Pages/Notes";
 
 export default function App() {
   return (
@@ -34,7 +35,8 @@ export default function App() {
           <Route path="orders" element={<Orders />} />
           <Route path="customers" element={<Customers />} />
           <Route path="products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetail />} /> 
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/notes" element={<Notes />} /> 
         </Route>
 
         {/* 3. ROUTE AUTH (LOGIN/REGISTER) - TETAP AMAN */}
@@ -42,6 +44,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot" element={<Forgot />} />
+          
         </Route>
 
         {/* 4. ERROR PAGE */}

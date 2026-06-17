@@ -1,4 +1,4 @@
-import { MdFastfood } from "react-icons/md"; 
+import { MdFastfood } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import { CgUserList } from "react-icons/cg";
 import { GoListOrdered } from "react-icons/go";
@@ -56,10 +56,16 @@ export default function Sidebar() {
             </NavLink>
           </li>
           <li>
-          <MdFastfood />  <NavLink id="menu-4" to="/products" className={menuClass}>
+            <NavLink id="menu-4" to="/products" className={menuClass}>
               <MdFastfood className="mr-4 text-xl" />
               Products
             </NavLink>
+            <li>
+              <NavLink id="menu-5" to="/Notes" className={menuClass}>
+                <CgUserList className="mr-4 text-xl" />
+                Notes
+              </NavLink>
+            </li>
           </li>
         </ul>
       </div>
